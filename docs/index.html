@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas-shop</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets//Vector.svg" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <ul class="nav-ul-logo">
+            <li><img class="logo-img" src="assets/Vector.svg" alt="LOGO"></li>
+            <li><a href="index.html">THE GIFTS</a></li>
+        </ul>
+
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <img src="assets/hamburger-icon.svg" alt="Menu" class="hamburger-icon">
+            <img src="assets/close-icon.svg" alt="Close" class="close-icon">
+          </div>
+
+        <ul class="nav-ul-items">
+            <li><a href="gift.html" class="active">GIFTS</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">BEST</a></li>
+            <li><a href="">CONTACTS</a></li>
+        </ul>
+    </nav>
+      
+
+    <header>
+        <div class="main-header-div">
+            <p class="subtitle-header">Merry Christmas</p>
+            <h1 class="subtitle-h1">GIFT YOURSELF THE MAGIC OF NEW POSSIBILITIES</h1>
+            <a class="cta-button" href="gift.html">Explore Magical Gifts</a>
+            <p class="subtitle-header-w">and Happy New Year</p>
+        </div>
+    </header>
+
+    <main>
+            <div id="about" class="about-banner">
+                <section class="left-side">
+                    <p class="section-title-about">About</p>
+                    <h2 class="about-h2">UNLEASH YOUR INNER SUPERHERO!</h2>
+                    <p class="about-p">This New Year marks the beginning of your journey to inner harmony and new strengths. We offer unique gifts that will help you improve your life.</p>
+                </section>
+                <div class="right-side">
+                    <img class="about-img" src="assets/santaBig.png" alt="Santa Claus">
+                </div>
+            </div>
+
+            <div class="live-create-love">
+                <p class="live-create-love-highlight">Become Happier!</p>
+                <h3 class="live-create-love-h3">IN THE NEW 2025</h3>
+                <div class="cards-container">
+                    <div class="card">
+                        <h1 class="live-create-love-h1">LIVE</h1>
+                        <img class="live-create-love-img" src="assets/snowman.png" alt="Christmas picture">
+                    </div>
+                    <div class="card">
+                        <h1 class="live-create-love-h1">CREATE</h1>
+                        <img class="live-create-love-img" src="assets/christmas-trees.png" alt="Christmas picture">
+                    </div>
+                    <div class="card">
+                        <h1 class="live-create-love-h1">LOVE</h1>
+                        <img class="live-create-love-img" src="assets/christmas-tree-ball.png" alt="Christmas picture">
+                    </div>
+                </div>
+                <div class="scroll-container">
+                    <button class="scroll-btn left" onclick="scrollLeftBtn()"></button>
+                    <button class="scroll-btn right" onclick="scrollRightBtn()"></button>
+                </div>
+            </div>            
+        
+
+        <div id="best-gifts" class="best-gifts">
+            <p class="section-title">Best Gifts</p>
+            <h3 class="section-title-2">ESPECIALLY FOR YOU</h3>
+            <div id="gifts-container" class="gifts-container">
+                <div class="gift-card" data-category="For Work">
+                    <img class="img-gift-card" src="assets/gift-for-work.png" alt="Gift">
+                    <p class="text-best-gifts-1">FOR WORK</p>
+                    <h4 class="text-best-gifts-h4" data-category="Console.log Guru">Console.log Guru</h4>
+                </div>
+                <div class="gift-card" data-category="For Health">
+                    <img class="img-gift-card" src="assets/gift-for-health.png" alt="Gift">
+                    <p class="text-best-gifts-2">FOR HEALTH</p>
+                    <h4 class="text-best-gifts-h4" data-category="Hydration Bot">Hydration Bot</h4>
+                </div>
+                <div class="gift-card" data-category="For Work">
+                    <img class="img-gift-card" src="assets/gift-for-work.png" alt="Gift">
+                    <p class="text-best-gifts-1">FOR WORK</p>
+                    <h4 class="text-best-gifts-h4" data-category="Merge Master">Merge Master</h4>
+                </div>
+                <div class="gift-card" data-category="For Harmony">
+                    <img class="img-gift-card" src="assets/gift-for-harmony.png" alt="Gift">
+                    <p class="text-best-gifts-3">FOR HARMONY</p>
+                    <h4 class="text-best-gifts-h4" data-category="Spontaneous Coding Philosopher">Spontaneous Coding Philosopher</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="timer">
+            <h3 class="timer-h3">
+                READY TO START YOUR <span class="custom-line"></span> JOURNEY TO A BETTER <span class="custom-line"></span> VERSION OF YOURSELF?
+            </h3>
+            <button class="timer-cta-button">EXPLORE MAGICAL GIFTS</button>
+            <p class="timer-highlight">The New Year is Coming Soon...</p>
+            <div class="countdown">
+                <div>
+                    <span class="countdown-digit" id="days">00</span>
+                    <span class="countdown-time">DAYS</span>
+                </div>
+                <hr class="countdown-hr">
+                <div>
+                    <span class="countdown-digit" id="hours">00</span>
+                    <span class="countdown-time">HOURS</span>
+                </div>
+                <hr class="countdown-hr">
+                <div>
+                    <span class="countdown-digit" id="minutes">00</span>
+                    <span class="countdown-time">MINUTES</span>
+                </div>
+                <hr class="countdown-hr">
+                <div>
+                    <span class="countdown-digit" id="seconds">00</span>
+                    <span class="countdown-time">SECONDS</span>
+                </div>
+            </div>
+            
+            
+        </div>  
+
+        <div id="contacts" class="contact">
+
+            <a class="contact-card-a" href="tel:+375(29)111-22-33">
+                <div class="contact-card">
+                    <img src="assets/santa.png" alt="Santa Claus">
+                    <h2 class="contact-h2">+375 (29) 111-22-33</h2>
+                    <p class="contact-paragraph">CALL US</p>
+                </div>
+            </a>
+
+            <a class="contact-card-a" href="https://www.google.com/maps/@68.5090059,27.481845,2a,35.8y,326.65h,100.66t/data=!3m7!1e1!3m5!1sGtnAyp0MCbYAAAQZLDcQIA!2e0!3e5!7i10000!8i5000">
+                <div class="contact-card">
+                    <img src="assets/run_tree.png" alt="Christmas tree">
+                    <h2 class="contact-h2">MAGIC FOREST</h2>
+                    <p class="contact-paragraph">MEET US</p>
+                </div>
+            </a>
+
+            <a class="contact-card-a" href="mailto:GIFTS@MAGIC.COM">
+                <div class="contact-card">
+                    <img src="assets/snake.png" alt="Snake">
+                    <h2 class="contact-h2">GIFTS@MAGIC.COM</h2>
+                    <p class="contact-paragraph">WRITE US</p>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <footer>
+        <ul class="social-links">
+            <li class="icon-social-media"><img src="assets/telegram.svg" alt="Telegram" ></li>
+            <li class="icon-social-media"><img src="assets/facebook.svg" alt="Facebook" ></li>
+            <li class="icon-social-media"><img src="assets/instagram.svg" alt="Instagram" ></li>
+            <li class="icon-social-media"><img src="assets/twitter.svg" alt="X" ></li>
+        </ul>
+        <p class="footer-text">© Copyright 2025, All Rights Reserved</p>
+        <p class="footer-text-rs"><a class="footer-text-rs" href="https://rs.school/">Made in Rolling Scopes School</a></p>
+    </footer>
+
+    <div id="giftModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalIcon" src="./assets/gift-for-work.png" alt="Gift icon">
+            <div>
+                <h6 id="modalKind"></h6>
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <h3 class="modalHeaderStars">ADDS SUPERPOWERS TO:</h3>
+                <ul id="modalSuperpowers"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        // Funkcja otwierająca modal
+        function openModal(gift) {
+            const modal = document.getElementById('giftModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalDescription = document.getElementById('modalDescription');
+            const modalSuperpowers = document.getElementById('modalSuperpowers');
+            const modalCategory = document.getElementById('modalKind');
+
+            modalTitle.textContent = gift.name.toUpperCase();
+            modalDescription.textContent = gift.description;
+            modalCategory.textContent = gift.category.toUpperCase();
+
+            modalSuperpowers.innerHTML = '';
+            for (const [key, value] of Object.entries(gift.superpowers)) {
+                const li = document.createElement('li');
+                li.textContent = `${key}: ${value} `;
+            
+                const starCount = Math.floor(parseInt(value) / 100);
+                for (let i = 0; i < starCount; i++) {
+                    const starIcon = document.createElement('i');
+                    starIcon.className = 'fas fa-star';
+                    li.appendChild(starIcon);
+                }
+            
+                modalSuperpowers.appendChild(li);
+            }
+
+            modal.style.display = 'block';
+            document.body.classList.add('modal-open');
+        }
+
+
+        function closeModal() {
+            const modal = document.getElementById('giftModal');
+            modal.style.display = 'none';
+            document.body.classList.remove('modal-open');
+        }
+
+        document.querySelectorAll('.gift-card').forEach(card => {
+            card.addEventListener('click', () => {
+                console.log('Karta prezentu została kliknięta');
+                const giftName = card.querySelector('.text-best-gifts-h4').textContent.trim();
+                console.log('Nazwa prezentu:', giftName);
+                fetch('./gift.json')
+                .then(response => {
+                    if (!response.ok) {
+                    throw new Error('Błąd pobierania gift.json');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Dane z gift.json:', data);
+                    const gift = data.find(g => g.name === giftName);
+                    if (gift) {
+                        console.log('Znaleziony prezent:', gift);
+                        openModal(gift);
+                    } else {
+                        console.log('Nie znaleziono prezentu o nazwie:', giftName);
+                    }
+                })
+                .catch(error => console.error('Błąd:', error));
+            });
+        });
+
+
+
+        document.querySelector('.close').addEventListener('click', closeModal);
+        window.addEventListener('click', (event) => {
+        if (event.target === document.getElementById('giftModal')) {
+            closeModal();
+        }
+        });
+
+        // Timer 
+        function updateTimer() {
+            try {
+                const christmasDate = new Date('2025-12-25T00:00:00').getTime();
+                const now = new Date().getTime();
+                const diff = christmasDate - now;
+
+            if (diff <= 0) {
+                    document.getElementById('days').textContent = '00';
+                    document.getElementById('hours').textContent = '00';
+                    document.getElementById('minutes').textContent = '00';
+                    document.getElementById('seconds').textContent = '00';
+                    clearInterval(timerInterval);
+                return;
+            }
+
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                document.getElementById('days').textContent = String(days).padStart(2, '0');
+                document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+                document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+            } catch (error) {
+                console.error('Timer error:', error);
+            }
+        }
+
+        updateTimer();
+
+        const timerInterval = setInterval(updateTimer, 1000);
+
+        // Gift random
+        function shuffleGifts() {
+            const container = document.getElementById('gifts-container');
+            const cards = Array.from(container.children);
+            
+            cards.forEach(card => {
+                container.removeChild(card);
+            });
+        
+            cards.sort(() => Math.random() - 0.5);
+            
+            cards.forEach(card => {
+                container.appendChild(card);
+            });
+        }
+
+        window.addEventListener('load', shuffleGifts);
+
+        // Navigation
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-ul-items');
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            menu.classList.toggle('active');
+            hamburgerMenu.classList.toggle('active');
+        }
+
+        document.querySelectorAll('.nav-ul-items a').forEach(item => {
+            item.addEventListener('click', toggleMenu);
+        });
+        const hamburger = document.querySelector('.hamburger');
+        const menuOverlay = document.querySelector('.menu-overlay');
+        const menuItems = document.querySelectorAll('.menu a');
+
+        hamburger.addEventListener('click', () => {
+            menuOverlay.classList.toggle('active');
+        });
+
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                menuOverlay.classList.remove('active');
+            });
+        });
+
+        // Slider 
+        function scrollLeftBtn() {
+            const container = document.querySelector('.cards-container');
+            const cardWidth = document.querySelector('.card').offsetWidth;
+            container.scrollLeft -= cardWidth + 32;
+        }
+
+        function scrollRightBtn() {
+            const container = document.querySelector('.cards-container');
+            const cardWidth = document.querySelector('.card').offsetWidth;
+            container.scrollLeft += cardWidth + 32;
+        }
+
+    </script>
+
+</body>
+</html>

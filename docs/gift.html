@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas-shop</title>
+    <link rel="stylesheet" href="gift.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets//Vector.svg" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <ul class="nav-ul-logo">
+            <li><img class="logo-img" src="assets/Vector.svg" alt="LOGO"></li>
+            <li><a href="index.html">THE GIFTS</a></li>
+        </ul>
+
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <img src="assets/hamburger-icon.svg" alt="Menu" class="hamburger-icon">
+            <img src="assets/close-icon.svg" alt="Close" class="close-icon">
+          </div>
+
+        <ul class="nav-ul-items">
+            <li><a href="" class="active">GIFTS</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">BEST</a></li>
+            <li><a href="">CONTACTS</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="best-gifts">
+            <h3 class="section-title-2">ACHIEVE HEALTH, HARMONY, AND INNER STRENGTH</h3>
+
+            <div class="tabs">
+                <button class="tab active" data-category="all">All</button>
+                <button class="tab" data-category="For Work">For work</button>
+                <button class="tab" data-category="For Health">For health</button>
+                <button class="tab" data-category="For Harmony">For harmony</button>
+              </div>              
+
+            <div class="gifts-container">
+                <div class="gift-card" data-category="For Work">
+                    <img class="img-gift-card" src="assets/gift-for-work.png" alt="Gift">
+                    <p class="text-best-gifts-1" style="color: 4361FF">FOR WORK</p>
+                    <h4 id="nameGift" class="text-best-gifts-h4" data-category="Console.log Guru">Console.log Guru</h4>
+                </div>
+                <div class="gift-card" data-category="For Health">
+                    <img class="img-gift-card" src="assets/gift-for-health.png" alt="Gift">
+                    <p class="text-best-gifts-2">FOR HEALTH</p>
+                    <h4 id="nameGift" class="text-best-gifts-h4" data-category="Step Master">Step Master</h4>
+                </div>
+                <div class="gift-card" data-category="For Work">
+                    <img class="img-gift-card" src="assets/gift-for-work.png" alt="Gift">
+                    <p class="text-best-gifts-1">FOR WORK</p>
+                    <h4 id="nameGift" class="text-best-gifts-h4" data-category="Bug Magnet">Bug Magnet</h4>
+                </div>
+                <div class="gift-card" data-category="For Work">
+                    <img class="img-gift-card" src="assets/gift-for-work.png" alt="Gift">
+                    <p class="text-best-gifts-1">FOR WORK</p>
+                    <h4 id="nameGift" class="text-best-gifts-h4" data-category="Shortcut Cheater">Shortcut Cheater</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="best-gifts">
+            <div class="gifts-container">
+                <div class="gift-card" data-category="For Health">
+                    <img class="img-gift-card" src="assets/gift-for-health.png" alt="Gift">
+                    <p class="text-best-gifts-2">FOR HEALTH</p>
+                    <h4 id="nameGift" class="text-best-gifts-h4" data-category="Posture Levitation">Posture Levitation</h4>
+                </div>
+                <div class="gift-card" data-category="For Harmony">
+                    <img class="img-gift-card" src="assets/gift-for-harmony.png" alt="Gift">
+                    <p class="text-best-gifts-3">FOR HARMONY</p>
+                    <h4 id="nameGift" class="text-best-gifts-h4" data-category="Bug Acceptance Guru">Bug Acceptance Guru</h4>
+                </div>
+                <div class="gift-card" data-category="For Health">
+                    <img class="img-gift-card" src="assets/gift-for-health.png" alt="Gift">
+                    <p class="text-best-gifts-2">FOR HEALTH</p>
+                    <h4 id="nameGift" class="text-best-gifts-h4" data-category="Snack Resister">Snack Resister</h4>
+                </div>
+                <div class="gift-card" data-category="For Harmony">
+                    <img class="img-gift-card" src="assets/gift-for-harmony.png" alt="Gift">
+                    <p class="text-best-gifts-3">FOR HARMONY</p>
+                    <h4 id="nameGift" class="text-best-gifts-h4" data-category="Error Laugher">Error Laugher</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="best-gifts">
+            <div class="gifts-container">
+                <div class="gift-card" data-category="For Health">
+                    <img class="img-gift-card" src="assets/gift-for-health.png" alt="Gift">
+                    <p class="text-best-gifts-2">FOR HEALTH</p>
+                    <h4 id="nameGift" class="text-best-gifts-h4" data-category="Hydration Bot">Hydration Bot</h4>
+                </div>
+                <div class="gift-card" data-category="For Work">
+                    <img class="img-gift-card" src="assets/gift-for-work.png" alt="Gift">
+                    <p class="text-best-gifts-1">FOR WORK</p>
+                    <h4 id="nameGift" class="text-best-gifts-h4" data-category="Merge Master">Merge Master</h4>
+                </div>
+                <div class="gift-card" data-category="For Harmony">
+                    <img class="img-gift-card" src="assets/gift-for-harmony.png" alt="Gift">
+                    <p class="text-best-gifts-3">FOR HARMONY</p>
+                    <h4 id="nameGift" class="text-best-gifts-h4" data-category="Joy Charger">Joy Charger</h4>
+                </div>
+                <div class="gift-card" data-category="For Harmony">
+                    <img class="img-gift-card" src="assets/gift-for-harmony.png" alt="Gift">
+                    <p class="text-best-gifts-3">FOR HARMONY</p>
+                    <h4 id="nameGift" class="text-best-gifts-h4" data-category="Spontaneous Coding Philosopher">Spontaneous Coding Philosopher</h4>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <div id="contacts" class="contact">
+
+        <a href="tel:+375 (29) 111-22-33">
+            <div class="contact-card">
+                <img src="assets/santa.png" alt="Santa Claus">
+                <h2 class="contact-h2">+375 (29) 111-22-33</h2>
+                <p class="contact-paragraph">CALL US</p>
+            </div>
+        </a>
+
+        <a href="https://www.google.com/maps/@68.5090059,27.481845,2a,35.8y,326.65h,100.66t/data=!3m7!1e1!3m5!1sGtnAyp0MCbYAAAQZLDcQIA!2e0!3e5!7i10000!8i5000">
+            <div class="contact-card">
+                <img src="assets/run_tree.png" alt="Christmas tree">
+                <h2 class="contact-h2">MAGIC FOREST</h2>
+                <p class="contact-paragraph">MEET US</p>
+            </div>
+        </a>
+
+        <a href="mailto:GIFTS@MAGIC.COM">
+            <div class="contact-card">
+                <img src="assets/snake.png" alt="Snake">
+                <h2 class="contact-h2">GIFTS@MAGIC.COM</h2>
+                <p class="contact-paragraph">WRITE US</p>
+            </div>
+        </a>
+
+    </div>
+</main>
+
+<footer>
+    <ul class="social-links">
+        <li class="icon-social-media"><a href=""><img src="assets/telegram.svg" alt="Telegram" /></a></li>
+        <li class="icon-social-media"><a href=""><img src="assets/facebook.svg" alt="Facebook" /></a></li>
+        <li class="icon-social-media"><a href=""><img src="assets/instagram.svg" alt="Instagram" /></a></li>
+        <li class="icon-social-media"><a href=""><img src="assets/twitter.svg" alt="X" /></a></li>
+    </ul>
+    <p class="footer-text">© Copyright 2025, All Rights Reserved</p>
+    <p class="footer-text-rs"><a class="footer-text-rs" href="https://rs.school/">Made in Rolling Scopes School</a></p>
+</footer>
+
+<button onclick="topFunction()" id="backToTop" title="Powrót na górę">↑</button>
+
+<div id="giftModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalIcon" src="./assets/gift-for-work.png" alt="Gift icon">
+        <div>
+            <h6 id="modalKind"></h6>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <h3 class="modalHeaderStars">ADDS SUPERPOWERS TO:</h3>
+            <ul id="modalSuperpowers"></ul>
+        </div>
+    </div>
+</div>
+  
+
+<script>
+
+    // Funkcja otwierająca modal
+    function openModal(gift) {
+        const modal = document.getElementById('giftModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDescription = document.getElementById('modalDescription');
+        const modalSuperpowers = document.getElementById('modalSuperpowers');
+        const modalCategory = document.getElementById('modalKind');
+
+        modalTitle.textContent = gift.name.toUpperCase();
+        modalDescription.textContent = gift.description;
+        modalCategory.textContent = gift.category.toUpperCase();
+
+        modalSuperpowers.innerHTML = '';
+        for (const [key, value] of Object.entries(gift.superpowers)) {
+            const li = document.createElement('li');
+            li.textContent = `${key}: ${value} `;
+        
+            const starCount = Math.floor(parseInt(value) / 100);
+            for (let i = 0; i < starCount; i++) {
+                const starIcon = document.createElement('i');
+                starIcon.className = 'fas fa-star';
+                li.appendChild(starIcon);
+            }
+        
+            modalSuperpowers.appendChild(li);
+        }
+
+        modal.style.display = 'block';
+        document.body.classList.add('modal-open');
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('giftModal');
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open');
+    }
+
+    document.querySelectorAll('.gift-card').forEach(card => {
+        card.addEventListener('click', () => {
+            console.log('Karta prezentu została kliknięta');
+            const giftName = card.querySelector('.text-best-gifts-h4').textContent;
+            console.log('Nazwa prezentu:', giftName);
+            fetch('./gift.json')
+            .then(response => response.json())
+            .then(data => {
+                console.log('Dane z gift.json:', data);
+                const gift = data.find(g => g.name === giftName);
+                if (gift) {
+                    console.log('Znaleziony prezent:', gift);
+                    openModal(gift);
+                } else {
+                    console.log('Nie znaleziono prezentu o nazwie:', giftName);
+                }
+            })
+            .catch(error => console.error('Błąd ładowania gift.json:', error));
+        });
+    });
+
+    document.querySelector('.close').addEventListener('click', closeModal);
+    window.addEventListener('click', (event) => {
+    if (event.target === document.getElementById('giftModal')) {
+        closeModal();
+    }
+    });
+
+    // filter gift
+    function displayGifts(gifts) {
+        const containers = document.querySelectorAll('.gifts-container');
+        containers.forEach(container => {
+            container.innerHTML = '';
+            gifts.forEach(gift => {
+                const giftCard = document.createElement('div');
+                giftCard.className = 'gift-card';
+                giftCard.setAttribute('data-category', gift.category);
+                const imagePath = getImagePath(gift.category);
+                giftCard.innerHTML = `
+                    <img class="img-gift-card" src="${imagePath}" alt="${gift.name}">
+                    <p class="text-best-gifts-${getCategoryClass(gift.category)}">${gift.category}</p>
+                    <h4 class="text-best-gifts-h4">${gift.name}</h4>
+                `;
+                container.appendChild(giftCard);
+            });
+        });
+
+        initializeTabs();
+    }
+
+    function getImagePath(category) {
+        switch(category) {
+            case 'For Work':
+            return './assets/gift-for-work.png';
+            case 'For Health':
+            return './assets/gift-for-health.png';
+            case 'For Harmony':
+            return './assets/gift-for-harmony.png';
+            default:
+            return './assets/gift-for-work.png';
+        }
+    }
+
+
+    function getCategoryClass(category) {
+        const categoryMap = {
+            'For Work': '1',
+            'For Health': '2',
+            'For Harmony': '3'
+        };
+
+        return categoryMap[category] || '1';
+    }
+
+    // Tabs
+    function initializeTabs() {
+        const tabs = document.querySelectorAll('.tab');
+        const giftCards = document.querySelectorAll('.gift-card');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+                const category = this.getAttribute('data-category').toLowerCase();
+
+                tabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+
+                giftCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category').toLowerCase();
+
+                    if (category === 'all' || cardCategory === category) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        initializeTabs();
+    });
+
+    // Up button
+    let mybutton = document.getElementById("backToTop");
+
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    };
+
+    function topFunction() {
+        document.documentElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+    // Hamburger menu
+
+    function toggleMenu() {
+        const menu = document.querySelector('.nav-ul-items');
+        const hamburgerIcon = document.querySelector('.hamburger-icon');
+        const closeIcon = document.querySelector('.close-icon');
+        
+        menu.classList.toggle('active');
+        hamburgerIcon.style.display = menu.classList.contains('active') ? 'none' : 'block';
+        closeIcon.style.display = menu.classList.contains('active') ? 'block' : 'none';
+    }
+
+        document.querySelectorAll('.nav-ul-items a').forEach(item => {
+            item.addEventListener('click', toggleMenu);
+        });
+
+        const hamburger = document.querySelector('.hamburger');
+        const menuOverlay = document.querySelector('.menu-overlay');
+        const menuItems = document.querySelectorAll('.menu a');
+
+        hamburger.addEventListener('click', () => {
+            menuOverlay.classList.toggle('active');
+        });
+
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+            menuOverlay.classList.remove('active');
+            });
+        });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        initializeTabs();
+
+        fetch('./gift.json')
+            .then(response => response.json())
+            .then(data => {
+            displayGifts(data);
+        })
+        .catch(error => console.error('Error:', error));
+    });
+
+</script>
+
+</body>
+</html>
